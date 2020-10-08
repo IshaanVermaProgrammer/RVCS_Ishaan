@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{background:red;color:white;font-family:cursive;}
+a{text-decoration:none;color:white;font:auto bold cursive;}
+button{background:chartreuse;font:30px bold cursive;height:50px;width:100px;font-family:cursive;border-radius:5px;}
+</style>
+</head>
+<body>
+<% for(let i=0;i<data.length;i++){ %>
+<% let click="document.write("+data[i].text+")" %>
+<h1><%= data[i].name %>  <a href=<%- "/files/"+data[i]._id %>><button>go</button></a></h1>
+<% } %>
+</body>
+</html>

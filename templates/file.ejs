@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+const p=()=>{
+const data=`<%- text %>`;
+for (let i=0;i<data.length;i++){
+if (data[i]=="\n" || data[i]=="\r"){
+document.querySelector("h1").innerHTML+="<br>";
+}
+else{
+document.querySelector("h1").innerHTML+=data[i];
+}
+}
+}
+</script>
+</head>
+<body onload="p()">>
+<h1></h1>
+</body>
+</html>

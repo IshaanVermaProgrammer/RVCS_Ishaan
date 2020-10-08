@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+background:purple;
+color:white;
+font:auto bold cursive;
+}
+input{
+display:block;
+width:40%;
+height:40px;
+}
+input[type=submit]{
+width:100px;
+height:50px;
+border-radius:5px;
+background:purple;
+color:white;
+border-color:white;
+}
+input[type=submit]:hover{background:black;}
+</style>
+</head>
+<body><center>
+<form action='/new' method='POST'>
+<input type='text' required name='name' placeholder='Enter file name'><br>
+<input type='text' required name='link' placeholder='Enter file path'><br>
+<input type='text' required name='type' placeholder='Enter file type'><br>
+<input type='submit'>
+</form>
+</center></body>
+</html>
